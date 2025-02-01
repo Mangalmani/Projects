@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chai aur code</title>
+    <style>
+        *{
+            /* flesh css */
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        nav{
+            display: flex;
+            background-color: #1f2937;
+            justify-content: space-around;
+            padding: 20px 80px ;
+            color: #ffffff;
+        }
+        nav div ul{
+            display: flex;
+            gap: 20px;
+            cursor: pointer;
+            list-style-type: none;
+        }
+        nav div button {
+            padding:  5px 10px;
+            border: 5px;
+            border: none;  
+        }
+       nav div button:hover {
+        background-color: #1144a3;
+        color:#ffffff;
+       }
+       .hero{
+        display: flex;
+        background-color: #1f2937;
+        color: #ffffff;
+        padding: 40px 20px;
+       }
+       .hero div{
+        width: 50%;
+       }
+       .hero div h1{
+        font-size: 3rem;
+        margin-bottom: 1rem
+       }
+       .hero div p{
+        font-size: 1.2rem;
+        color: #e4d8d8;
+margin-bottom: 1rem;
+       }
+       .hero div button{
+        padding: 8px 16px;
+        border: none;
+        border-radius: 5px;
+       }
+       .hero div button:hover{
+        background-color: #1144a3;
+        color:#ffffff;
+        cursor: pointer;
+       }
+       .hero div img{
+        width: 100%;
+        border-radius: 20px;
+        object-fit: cover;
+        box-shadow: 0 0 10 white;
+       }
+       .hero div img:hover{
+        transform: rotate(10deg);
+        transition: all .5s linear 1s;
+       
+       }
+       h2{
+        text-align: center;
+        font-size: 42px;
+        margin: 20px 10px;
+       color:  #1f2937;
+       }
+       .logo{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 2px solid brown;
+        padding: 40px 80px;
+       }
+       .logo div img{
+        width: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+       }
+       .three-card{
+        display: flex;
+        margin: 20px 10%;
+        justify-content: space-evenly;
+        border: 2px solid black;
+        padding: 40px 80px;
+        box-shadow: 0 0 10px black;
+
+       }
+       /* .three-card img{
+        width: 30%;
+       } */
+       .card {
+        border: 2px solid black;
+        width: 20%;
+        border-radius: 15px;
+        text-align: center;
+        padding: 20px;
+        box-shadow: 0 0 10px black;
+       }
+       .card img{
+        width: 100px;
+        object-fit: contain cover;
+        border-radius: 10px;
+       }
+       h3{
+        margin: 20px 0;
+       }
+       .card p{
+        margin: 20px 0;
+       }
+     /* media query */
+    body{
+        background-color: orange;
+    }
+     @media screen and (min-width: 976px) {
+        .three-card{
+            flex-direction: column;
+            justify-content: center;
+        }
+        .three-card div{
+            width: 80%;
+        }
+    }
+    </style>
+</head>
+<body>
+    <nav>
+        <div>my logo</div>
+        <div>
+            <ul>
+                <li>home</li>
+                <li>about us</li>
+                <li>contact us</li>
+            </ul>
+        </div>
+        <div>
+            <button>sign up</button>
+            <button>login</button>
+        </div>
+    </nav>
+   <section class="hero">
+    <div>
+        <h1>hero section</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi dolores ullam voluptate repudiandae assumenda soluta rerum animi vitae fugiat itaque omnis, explicabo, molestiae necessitatibus odit repellendus sit! Nobis fugit mollitia tempore non dolore quia quod repellendus hic dolorum, vel cupiditate consequuntur ducimus a ut? Deserunt natus blanditiis illo ab quam.</p>
+        <button>signup</button>
+    </div>
+    <div>
+<img width="100px" src="./../image/apple.jpg"alt="shinchin">
+    </div>
+   </section>
+
+   <h2 class="logo-text">our clients</h2>
+<section class="logo">
+    <div>
+        <img src="/image/logo4.jpg" alt="logo1">
+    </div>
+    <div>
+        <img src="/image/logo4.jpg" alt="logo2">
+    </div>
+    <div>
+        <img src="/image/logo3.jpg" alt="logo3">
+    </div>
+    <div>
+        <img src="/image/logo4.jpg" alt="logo4">
+    </div>
+</section>
+    <section class="three-card">
+        <div class="card">
+            <img src="https://media.istockphoto.com/id/1335941248/photo/shot-of-a-handsome-young-man-standing-against-a-grey-background.jpg?s=1024x1024&w=is&k=20&c=82oh6AmEb8LFipL3cE0gZwu4t45sT5G3386m82MHz6k=" alt="img1">
+            <h3>card title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab quis neque quas eligendi repellat expedita? Ut saepe molestiae alias quae!</p>
+        </div>
+        <div class="card">
+            <img src="https://images.pexels.com/photos/3799786/pexels-photo-3799786.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1=" alt="img1">
+            <h3>card title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab quis neque quas eligendi repellat expedita? Ut saepe molestiae alias quae!</p>
+        </div>
+        <div class="card">
+            <img src="https://images.pexels.com/photos/3785842/pexels-photo-3785842.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="img1">
+            <h3>card title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab quis neque quas eligendi repellat expedita? Ut saepe molestiae alias quae!</p>
+        </div>
+    </section>
+</body>
+</html>
